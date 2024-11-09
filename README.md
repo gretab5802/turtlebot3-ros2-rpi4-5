@@ -1,10 +1,23 @@
 # turtlebot3-ros2-rpi4-5
 Steps to get ROS2 on Turtlebot3 running on Raspberry Pi 4 or 5 (Ubuntu 24.04), steps to teleoperate it
 
-# On Raspberry Pi 5
+## On Raspberry Pi 5
+```
 sudo nano /etc/netplan/50-cloud-init.yaml
+```
 
-# Should become:
+### Should display
+```
+network:
+    ethernets:
+        eth0:
+            dhcp4: true
+            optional: true
+    version: 2
+```
+
+### Change it to:
+<pre>
 network:
     ethernets:
         eth0:
@@ -15,24 +28,30 @@ network:
         wlan0:
             dhcp4: true
             access-points:
-                "[network username]":
-                    password: "[network password]"
-
+                "<b>[network username]</b>":
+                    password: "<b>[network password]</b>"
+</pre>
+**Make sure you change [network username] and [network password] to your own network username and password**
 ###
 
 sudo nano /etc/apt/apt.conf.d/20auto-upgrades
 
-# Should become:
+### Should display
+```
+APT::Periodic::Update-Package-Lists "1";
+APT::Periodic::Unattended-Upgrade "1";
+```
+### Should become (change 1's to 0's):
 APT::Periodic::Update-Package-Lists "0";
 APT::Periodic::Unattended-Upgrade "0";
 
-###
-
+```
 systemctl mask systemd-networkd-wait-online.service
 
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
 reboot
+```
 
 hostname -I
 ## ^^ for IP address
