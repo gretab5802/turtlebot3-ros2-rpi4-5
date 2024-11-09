@@ -1,5 +1,5 @@
-# turtlebot3-ros2-rpi4-5
-Steps to get ROS2 on Turtlebot3 running on Raspberry Pi 4 or 5 (Ubuntu 24.04), steps to teleoperate it
+# ROS2 Humble (Ubuntu 22.04) on Raspberry Pi 5 (Ubuntu 24.04) through docker container, Turtlebot3 teleoperation
+Steps to get ROS2 on Turtlebot3 running on Raspberry Pi 5 (Ubuntu 24.04) and then to teleoperate it
 
 ## On Raspberry Pi 5
 ```
