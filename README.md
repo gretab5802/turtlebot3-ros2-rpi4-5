@@ -1,25 +1,37 @@
 # ROS2 Humble (Ubuntu 22.04) on Raspberry Pi 4 or 5 (Ubuntu 24.04) through docker container, Turtlebot3 teleoperation
 Steps to get ROS2 on Turtlebot3 running on Raspberry Pi 5 (Ubuntu 24.04) and then to teleoperate it
 
+## Resources:
+This process largely has 4 steps, each of which as websites that go alongside them:
+1. Preparing Turtlebot3 and Raspberry Pi (setup)
+    * Hardware assembly for Turtlebot3: https://emanual.robotis.com/docs/en/platform/turtlebot3/hardware_setup/#hardware-assembly
+    * Raspberry Pi OS: https://www.raspberrypi.com/software/
+    * Raspberry Pi network configuration: https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/
+2. Setting up a docker environment on RPi
+    * Docker engine for Ubuntu: https://docs.docker.com/engine/install/ubuntu/
+3. Installing ROS 2 Humble in the docker environemnt
+    * ROS 2 Humble Deb packages: https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
+4. Installing Turtlebot3 files in docker environment
+    * https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/
+
 ## Prequisites:
-# Hardware needed:
+### Hardware needed:
 * Raspberry Pi 4 or 5
 * Turtlebot3 with OpenCR controller
-<br />**_Hardware assembly for Turtlebot3: https://emanual.robotis.com/docs/en/platform/turtlebot3/hardware_setup/#hardware-assembly_**
 * Power cord for OpenCR board
 * Monitor with HDMI cable -> Either HDMI to micro HDMI, or HDMI to HDMI with a micro HDMI adapter (monitor uses HDMI, Raspberry Pi uses micro HDMI)
 * USB keyboard
 * Micro SD card (32 GB or greater, I think 16 GB is too small)
 * A way for your computer to flash the micro SD card (either a micro SD slot built in to the computer or a USB to micro SD card adapter)
 
-# Setting up the OS
+### Setting up the OS
 * Flash SD card with Raspberry Pi OS
-<br />**_Raspberry Pi OS: https://www.raspberrypi.com/software/_**
 * **Device**: Raspberry Pi 4 or 5 (whichever you are using)
 * **Operating System**: Other General Purpose OS -> Ubuntu -> Ubuntu Server 24.04.1 LTS (64-bit)
 * **Storage**: SD card
 * When flashing OS onto SD card, apply customization settings to set username and password when prompted. This will be the login information you need to sign into the Raspberry Pi when connecting it to a monitor/keyboard and when SSHing into it
 
+# Let's begin!
 ## On Raspberry Pi 5
 Plug in power to OpenCR board, HDMI from monitor to Raspberry Pi, and keyboard into Raspberry Pi. You should get a login prompt to which you will put in whatever username and password you flashed on to the SD card when you set it up.<br />
 If the monitor says something along the lines of "Frequency not supported", try switching between the two micro HDMI slots in the Pi and turning the board off and then on again.
