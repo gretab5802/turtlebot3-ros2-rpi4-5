@@ -5,7 +5,7 @@ Steps to get ROS2 on Turtlebot3 running on Raspberry Pi 5 (Ubuntu 24.04) and the
 # Hardware needed:
 * Raspberry Pi 4 or 5
 * Turtlebot3 with OpenCR controller
-Hardware assembly for Turtlebot3: https://emanual.robotis.com/docs/en/platform/turtlebot3/hardware_setup/#hardware-assembly
++ Hardware assembly for Turtlebot3: https://emanual.robotis.com/docs/en/platform/turtlebot3/hardware_setup/#hardware-assembly
 * Power cord for OpenCR board
 * Monitor with HDMI cable -> Either HDMI to micro HDMI, or HDMI to HDMI with a micro HDMI adapter (monitor uses HDMI, Raspberry Pi uses micro HDMI)
 * USB keyboard
@@ -14,7 +14,7 @@ Hardware assembly for Turtlebot3: https://emanual.robotis.com/docs/en/platform/t
 
 # Setting up the OS
 * Flash SD card with Raspberry Pi OS
-Raspberry Pi OS: https://www.raspberrypi.com/software/
++ Raspberry Pi OS: https://www.raspberrypi.com/software/
 * **Device**: Raspberry Pi 4 or 5 (whichever you are using)
 * **Operating System**: Other General Purpose OS -> Ubuntu -> Ubuntu Server 24.04.1 LTS (64-bit)
 * **Storage**: SD card
@@ -168,7 +168,7 @@ source ~/.bashrc
 ```
 
 ## Stop!
-** This next part is different for Raspberry Pi 4 and 5's. If you are doing this on a Pi 5, you can skip the next few steps and [continue](##-continue)
+**This next part is different for Raspberry Pi 4 and 5's.** If you are doing this on a Pi 5, you can skip the next few steps and [continue](#continue)
 For Pi 4's, they are running much slower for this next step than the Pi 5's and are sometimes never completing it. To try and mitigate this, there are some things we can do.
 First, to help the Pi 4 if it runs out of RAM, we can create a swap file to provide additional virtual memory. To do this, we must exit docker momentarily.
 ```
