@@ -5,7 +5,7 @@ Steps to get ROS2 on Turtlebot3 running on Raspberry Pi 5 (Ubuntu 24.04) and the
 # Hardware needed:
 * Raspberry Pi 4 or 5
 * Turtlebot3 with OpenCR controller
-+ Hardware assembly for Turtlebot3: https://emanual.robotis.com/docs/en/platform/turtlebot3/hardware_setup/#hardware-assembly
+<br />**_Hardware assembly for Turtlebot3: https://emanual.robotis.com/docs/en/platform/turtlebot3/hardware_setup/#hardware-assembly_**
 * Power cord for OpenCR board
 * Monitor with HDMI cable -> Either HDMI to micro HDMI, or HDMI to HDMI with a micro HDMI adapter (monitor uses HDMI, Raspberry Pi uses micro HDMI)
 * USB keyboard
@@ -14,14 +14,15 @@ Steps to get ROS2 on Turtlebot3 running on Raspberry Pi 5 (Ubuntu 24.04) and the
 
 # Setting up the OS
 * Flash SD card with Raspberry Pi OS
-+ Raspberry Pi OS: https://www.raspberrypi.com/software/
+<br />**_Raspberry Pi OS: https://www.raspberrypi.com/software/_**
 * **Device**: Raspberry Pi 4 or 5 (whichever you are using)
 * **Operating System**: Other General Purpose OS -> Ubuntu -> Ubuntu Server 24.04.1 LTS (64-bit)
 * **Storage**: SD card
 * When flashing OS onto SD card, apply customization settings to set username and password when prompted. This will be the login information you need to sign into the Raspberry Pi when connecting it to a monitor/keyboard and when SSHing into it
 
 ## On Raspberry Pi 5
-Plug in power to OpenCR board, HDMI from monitor to Raspberry Pi, and keyboard into Raspberry Pi. You should get a login prompt to which you will put in whatever username and password you flashed on to the SD card when you set it up. If the monitor says something along the lines of "Frequency not supported", try switching between the two micro HDMI slots in the Pi and turning the board off and then on again.
+Plug in power to OpenCR board, HDMI from monitor to Raspberry Pi, and keyboard into Raspberry Pi. You should get a login prompt to which you will put in whatever username and password you flashed on to the SD card when you set it up.<br />
+If the monitor says something along the lines of "Frequency not supported", try switching between the two micro HDMI slots in the Pi and turning the board off and then on again.
 ```
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
@@ -168,8 +169,8 @@ source ~/.bashrc
 ```
 
 ## Stop!
-**This next part is different for Raspberry Pi 4 and 5's.** If you are doing this on a Pi 5, you can skip the next few steps and [continue](#continue)
-For Pi 4's, they are running much slower for this next step than the Pi 5's and are sometimes never completing it. To try and mitigate this, there are some things we can do.
+**This next part is different for Raspberry Pi 4 and 5's.** If you are doing this on a Pi 5, you can skip the next few steps and [continue](#continue)<br />
+For Pi 4's, they are running much slower for this next step than the Pi 5's and are sometimes never completing it. To try and mitigate this, there are some things we can do.<br />
 First, to help the Pi 4 if it runs out of RAM, we can create a swap file to provide additional virtual memory. To do this, we must exit docker momentarily.
 ```
 exit
