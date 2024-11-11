@@ -25,7 +25,7 @@ This process largely has 4 steps, each of which as websites that go alongside th
 * A way for your computer to flash the micro SD card (either a micro SD slot built in to the computer or a USB to micro SD card adapter)
 
 ### Setting up the OS
-* Flash SD card with Raspberry Pi OS
+* Flash micro SD card with Raspberry Pi OS
 * **Device**: Raspberry Pi 4 or 5 (whichever you are using)
 * **Operating System**: Other General Purpose OS -> Ubuntu -> Ubuntu Server 24.04.1 LTS (64-bit)
 * **Storage**: SD card
