@@ -280,8 +280,8 @@ tar -xvf ./opencr_update.tar.bz2
 cd opencr_update
 ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 ```
-A successful run wil look like this:<br /><br />
-<img src="images/tbotsuccess.png" alt="Successful run" width="600"/><br />
+A successful run wil look like this:<br />
+<img src="images/tbotsuccess.png" alt="Successful run" width="700"/><br />
 
 Back to docker!!!
 ```
