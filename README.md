@@ -227,11 +227,10 @@ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-**Make sure you replce _[LDS-01 or LDS-02]_ with whichever lidar you actually have. Lidar 1 has a slight edge on it whereas Lidar 2 is a full circle**
-![Lidar 1](images/lds01.png)
-*Lidar 1 - LDS-01*
-![Lidar 2](images/lds02.png)
-*Lidar 2 - LDS-02*
+**Make sure you replce _[LDS-01 or LDS-02]_ with whichever lidar you actually have. Lidar 1 has a slight edge on it whereas Lidar 2 is a full circle**<br />
+| ![Lidar 1](images/lds01.png)   | ![Lidar 2](images/lds02.png)   |
+|:------------------------------:|:------------------------------:|
+| *Lidar 1 - LDS-01*             |*Lidar 2 - LDS-02*              |
 <pre>
 echo 'export LDS_MODEL=<b>[LDS-01 or LDS-02]</b>' >> ~/.bashrc
 </pre>
