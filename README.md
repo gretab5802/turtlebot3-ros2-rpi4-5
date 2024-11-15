@@ -281,7 +281,7 @@ cd opencr_update
 ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 ```
 A successful run wil look like this:<br /><br />
-<img src="images/tbotsuccess.png" alt="Successful run" width="500"/><br />
+<img src="images/tbotsuccess.png" alt="Successful run" width="600"/><br />
 
 Back to docker!!!
 ```
